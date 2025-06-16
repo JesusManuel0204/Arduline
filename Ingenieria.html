@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Carreras Universitarias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Fuente y colores base */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Menú lateral */
+    .sidebar {
+      height: 100vh;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #1d3557;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 2;
+    }
+
+    .sidebar a {
+      padding: 14px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f1faee;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #457b9d;
+    }
+
+    /* Botón para abrir el menú */
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #1d3557;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .openbtn:hover {
+      background-color: #457b9d;
+    }
+
+    /* Contenido principal */
+    #main {
+      transition: margin-left 0.3s;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      color: #1d3557;
+    }
+
+    /* Tarjeta de sección */
+    .section {
+      margin-top: 40px;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      max-width: 800px;
+    }
+
+    .section p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .openbtn {
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Carreras Universitarias</button>
+<center>
+    <h2>Bienvenido a la Guía de Carreras</h2>
+    <p>Usa el menú para navegar entre las distintas carreras.</p>
+
+    <!-- Sección de Arquitectura -->
+    <div class="section" id="arquitectura">
+      <h3>Ingenieria</h3>
+      <p>
+        La carrera de Arquitectura forma profesionales capaces de diseñar, planificar y construir espacios funcionales y estéticos.
+        Combina creatividad, técnica y conocimientos de urbanismo. Es ideal para personas con visión espacial, sensibilidad artística y vocación transformadora del entorno.
+      </p>
+    </div>
+</center>
+  </div>
+
+  <!-- Menú lateral -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" onclick="closeNav()">✖ Cerrar</a>
+<a href="Arduline prueba 1.html">Inicio</a>
+    <a href="Medicina.html">Medicina</a>
+    <a href="Ingenieria.html">Ingeniería</a>
+    <a href="Derecho.html">Derecho</a>
+    <a href="Psicologia.html">Psicología</a>
+    <a href="Arquitectura.html">Arquitectura</a>
+  </div>
+
+  <!-- Script para abrir/cerrar menú -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Universidades para ING. en Sistemas en México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #44abbd;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #44abbd;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #44abbd;
+        }
+        ul, dl {
+            list-style: none;
+            padding: 0;
+        }
+        li, dt, dd {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        a {
+            color: #44abbd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mejores Universidades de ING. Sistemas en México</h1>
+    </header>
+
+    <section id="university-details">
+        <h2>Detalles de Universidades</h2>
+
+            <section id="sistemas">
+
+        <dl>
+            <dt><strong>UNAM</strong></dt>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 5 años</dd>
+            <dd>Costos: $0.25 MXN anuales</dd>
+            <dd>Requisitos: Examen de admisión, promedio ≥7</dd>
+            <dd><a href="https://www.fi.unam.mx/" target="_blank">Página oficial</a></dd>
+
+            <dt><strong>UAM Xochimilco</strong></dt>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 5 años</dd>
+            <dd>Costos: Gratuita</dd>
+            <dd>Requisitos: Examen de admisión</dd>
+            <dd><a href="https://xochimilco.uam.mx/" target="_blank">Página oficial</a></dd>
+
+            <dt><strong>Universidad Autónoma de Tlaxcala</strong></dt>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 5 años</dd>
+            <dd>Costos: Gratuita</dd>
+            <dd>Requisitos: Examen de admisión</dd>
+            <dd><a href="https://www.uatx.mx/" target="_blank">Página oficial</a></dd>
+        </dl>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Mejores Universidades de ING en Sistemas en México. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

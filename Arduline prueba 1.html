@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.R.D.U LINE - Descubre tu Carrera</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: #f1f1f1;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc') center/cover;
+      color: white;
+      padding: 5em 1em;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .section {
+      padding: 2em;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A.R.D.U LINE</h1>
+    <p>Descubre tu futuro universitario</p>
+  </header>
+
+  <nav>
+    <a href="#carreras">Carreras</a>
+    <a href="#universidades">Universidades</a>
+    <a href="#test">Test Vocacional</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Encuentra la carrera perfecta para ti</h1>
+    <p>Explora más de 500 opciones académicas en universidades de todo México</p>
+  </section>
+
+  <section id="carreras" class="section">
+    <h2>Carreras Populares</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Arquitectura</h3>
+        <p>Diseño, planificación y construcción de espacios.</p>
+	<a href="Arquitectura.html">Explorar...</a>
+      </div>
+
+      <div class="card">
+        <h3>Medicina</h3>
+        <p>Atención médica, salud y bienestar de las personas.</p>
+	<a href="Medicina.html">Explorar...</a>
+      </div>
+
+      <div class="card">
+        <h3>Ingeniería en Sistemas</h3>
+        <p>Desarrollo de software, redes y tecnología.</p>
+	<a href="Ingenieria.html">Explorar...</a>
+      </div>
+
+      <div class="card">
+        <h3>Derecho</h3>
+        <p>Interpretar, aplicar y comprender la ley de manera ética y efectiva.</p>
+	<a href="Derecho.html">Explorar...</a>
+      </div>
+
+      <div class="card">
+        <h3>Psicología</h3>
+        <p>Interpretar, aplicar y comprender la ley de manera ética y efectiva.</p>
+	<a href="Psicologia.html">Explorar...</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="universidades" class="section">
+    <h2>Universidades Destacadas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>UNAM</h3>
+        <p>Ciudad de México. Oferta académica extensa y prestigio internacional.</p>
+      </div>
+      <div class="card">
+        <h3>IPN</h3>
+        <p>Instituto Politécnico Nacional, excelencia en tecnología e ingeniería.</p>
+      </div>
+      <div class="card">
+        <h3>UANL</h3>
+        <p>Universidad Autónoma de Nuevo León. Educación pública de calidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="test" class="section">
+    <h2>Test Vocacional</h2>
+    <div class="card">
+      <p>¿No sabes qué carrera estudiar? Realiza nuestro test vocacional y descubre qué opciones van mejor contigo.</p>
+      <button onclick="alert('Test en desarrollo')">Iniciar Test</button>
+    </div>
+  </section>
+
+  <section id="recursos" class="section">
+    <h2>Recursos para Aspirantes</h2>
+    <ul>
+      <li>Guía para elegir tu carrera</li>
+      <li>Convocatorias y fechas importantes</li>
+      <li>Cómo prepararte para el examen de admisión</li>
+      <li>Comparador de universidades y carreras</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? Escríbenos a contacto@arduline.mx</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A.R.D.U LINE | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Carreras Universitarias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Banner principal */
+    .banner {
+      background-color: #4CAF50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .banner h1 {
+      margin: 10px 0 5px;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .banner p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    /* Botón del menú dentro del banner */
+    .banner .openbtn {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .banner .openbtn:hover {
+      background-color: #388e3c;
+    }
+
+    /* Menú lateral */
+    .sidebar {
+      height: 100vh;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #1d3557;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 2;
+    }
+
+    .sidebar a {
+      padding: 14px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f1faee;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #457b9d;
+    }
+
+    #main {
+      transition: margin-left 0.3s;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      color: #1d3557;
+    }
+
+    .section {
+      margin-top: 40px;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      max-width: 800px;
+    }
+
+    .section p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 26px;
+      }
+
+      .banner .openbtn {
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner con botón del menú -->
+  <div class="banner">
+    <button class="openbtn" onclick="openNav()">☰ Carreras</button>
+    <h1>A.R.D.U LINE</h1>
+    <p>Descubre tu futuro universitario</p>
+  </div>
+
+  <!-- Contenido principal -->
+  <div id="main">
+<center>
+    <h2>Bienvenido a la Guía de Carreras</h2>
+    <p>Usa el menú para navegar entre las distintas carreras.</p>
+
+    <!-- Sección de Arquitectura -->
+    <div class="section" id="arquitectura">
+      <h3>Arquitectura</h3>
+      <p>
+        La carrera de Arquitectura forma profesionales capaces de diseñar, planificar y construir espacios funcionales y estéticos.
+        Combina creatividad, técnica y conocimientos de urbanismo. Es ideal para personas con visión espacial, sensibilidad artística y vocación transformadora del entorno.
+      </p>
+    </div>
+</center>
+  </div>
+
+  <!-- Menú lateral -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" onclick="closeNav()">✖ Cerrar</a>
+    <a href="Arduline prueba 1.html">Inicio</a>
+    <a href="Medicina.html">Medicina</a>
+    <a href="Ingenieria.html">Ingeniería</a>
+    <a href="Derecho.html">Derecho</a>
+    <a href="Psicologia.html">Psicología</a>
+    <a href="Arquitectura.html">Arquitectura</a>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+</body>
+</html>
+
+
+	
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Universidades para Arquitectura en México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #44abbd;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #44abbd;
+        }
+        ul, dl {
+            list-style: none;
+            padding: 0;
+        }
+        li, dt, dd {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        a {
+            color: #44abbd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mejores Universidades de Arquitectura en México</h1>
+    </header>
+        <section id="university-details">
+        <h2>Detalles de Universidades</h2>
+        <dl>
+            <!-- Universidad Autónoma de México (UNAM) -->
+            <dt><strong>Universidad Nacional Autónoma de México (UNAM)</strong></dt>
+            <dd>Nombre de la carrera: Licenciatura en Arquitectura</dd>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 10 semestres</dd>
+            <dd>Costos: Inscripción anual $0.25 MXN</dd>
+            <dd>Requisitos: Examen de admisión, promedio mínimo, CURP, acta de nacimiento</dd>
+            <dd>Programas académicos: Diseño arquitectónico, urbanismo, sustentabilidad</dd>
+            <dd><a href="https://arquitectura.unam.mx/" target="_blank">Página oficial</a></dd>
+
+            <!-- ITESO -->
+            <dt><strong>Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)</strong></dt>
+            <dd>Nombre de la carrera: Arquitectura</dd>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 10 semestres</dd>
+            <dd>Costos: $85,000 MXN por semestre</dd>
+            <dd>Requisitos: Examen de admisión, entrevista</dd>
+            <dd>Programas académicos: Innovación arquitectónica, sustentabilidad</dd>
+            <dd><a href="https://www.iteso.mx" target="_blank">Página oficial</a></dd>
+
+            <!-- Universidad de las Américas Puebla (UDLAP) -->
+            <dt><strong>Universidad de las Américas Puebla (UDLAP)</strong></dt>
+            <dd>Nombre de la carrera: Arquitectura</dd>
+            <dd>Modalidad: Presencial</dd>
+            <dd>Duración: 9 semestres</dd>
+            <dd>Costos: $100,000 MXN anuales</dd>
+            <dd>Requisitos: Examen de admisión, entrevista</dd>
+            <dd>Programas académicos: Diseño, urbanismo y sustentabilidad</dd>
+            <dd><a href="https://udlap.mx/" target="_blank">Página oficial</a></dd>
+        </dl>
+    </section>
+    <footer>
+        <p>© 2024 Mejores Universidades de Arquitectura en México. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
